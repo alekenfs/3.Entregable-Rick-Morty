@@ -27,7 +27,7 @@ console.log(location);
 
   return (
     <div className="App">
-      <img className='headerimg' src="../src/assets/tumblr_pjug61Pxx81xgc3e1o3_1280.jpg" alt="" />
+      <img className='headerimg' src="https://64.media.tumblr.com/dd09fb72824950040154dfd1a094c945/tumblr_pjug61Pxx81xgc3e1o3_1280.jpg" alt="" />
     <b>Rick and Morty</b>
       <div className='barContainer'><input type="text" value={locationID} onChange={e=>setLocationID(e.target.value)}/> <button onClick={searchLocation}>Buscar</button></div>
       <Location
