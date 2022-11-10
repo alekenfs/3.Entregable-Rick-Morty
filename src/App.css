@@ -123,7 +123,13 @@ color: aliceblue;}
 
 
 .residentsContainer{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container-grid{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
 }
 
 .residentInfo {
