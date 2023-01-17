@@ -6,7 +6,7 @@ import Location from './Components/Location'
 
 function App() {
   const [location, setLocation] = useState({})
-  const [locationID, setLocationID] = useState("Type a number 1-126")
+  const [locationID, setLocationID] = useState("")
 
 
 
@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <img className='headerimg' src="https://64.media.tumblr.com/dd09fb72824950040154dfd1a094c945/tumblr_pjug61Pxx81xgc3e1o3_1280.jpg" alt="" />
       <b>Rick and Morty</b>
-      <div className='barContainer'><input type="text" value={locationID} onChange={e => setLocationID(e.target.value)} /> <button onClick={searchLocation}>Buscar</button></div>
+      <div className='barContainer'><input type="text" value={locationID} placeHolder="Type a number 1-126" onChange={e => setLocationID(e.target.value)} /> <button onClick={searchLocation}>Buscar</button></div>
       <Location
         location={location}
       />
